@@ -3,16 +3,12 @@ datalist {
     flex-direction: column;
     justify-content: space-between;
     writing-mode: vertical-lr;
-    width: 200px;
+    width: 100%;
+    text-orientation:upright;
   }
   
   option {
     padding: 0;
-  }
-  
-  input[type="range"] {
-    width: 200px;
-    margin: 0;
   }
 
   .txt-limit1 {
@@ -34,4 +30,12 @@ datalist {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3; /* 任意の行数を指定 */
+  }
+
+  .fa-chevron-circle-down{
+    color:#d6d6d6;
+  }
+
+  .fa-chevron-circle-down:hover{
+    color:#3ed652;
   }

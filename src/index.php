@@ -61,6 +61,7 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
     foreach($smtp as $row){
         echo '<li class="list-group-item d-flex justify-content-between align-items-center">';
         echo '<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#CheckTodoModal" data-bs-id="',$row['item_id'],'" data-bs-title="',$row['title'],'">';
+        echo '<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>';
         echo '</button>';
         echo '<label class="form-check-label flex-grow-1 text-start txt-limit1">',$row['title'],'</label>';
         echo '<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#EditTodoModal" data-bs-id="',$row['item_id'],'" data-bs-title="',$row['title'],'" data-bs-category="',$row['category_id'],'">';
